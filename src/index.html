@@ -4,17 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>News Aggregator</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="./styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="./styles/index.css">
 </head>
 <body>
   <h1 class="site-title">News Aggregator</h1>
-  
+
   <div class="search-container">
-    <input type="text" name="search" id="search" placeholder="Type and press enter to search..." />
+    <input type="text" id="search" placeholder="Type and press enter to search..." />
   </div>
 
   <ul id="news-articles">
+     <li class="article" style="display:none;">
+        <img class="article-img" src=""/>
 
+        <h2 class="article-title"></h2>
+
+        <p class="article-description"></p>
+
+        <span class="article-author"></span>
+                        
+        <a class="article-link" href="" target="_blank"></a>
+     </li>
   </ul>
-  <script src="scripts/index.js"></script>
+  <h3 class="not-found">No article was found based on the search.</h3>
+  
+  
+  <script src="./scripts/index.js"></script>
+  
 </body>
-</html>
+</html>>
